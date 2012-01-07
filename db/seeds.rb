@@ -10,7 +10,7 @@
   
   [Post].each(&:delete_all)
   
-  Post.populate 20 do |post|
+  Post.populate 100 do |post|
     post.title = Populator.words(1..3).titleize
     post.body = Populator.sentences(2..10)
   end

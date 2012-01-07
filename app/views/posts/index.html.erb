@@ -9,15 +9,9 @@
     <th></th>
   </tr>
 
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.body %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<%= render :partial => 'post' %>
+<%= will_paginate @posts %>
+<%= nether(@posts.total_pages, posts_path, "#content") %>
 </table>
 
 <br />

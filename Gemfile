@@ -6,7 +6,6 @@ gem 'rails', '3.1.3'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'rake', '0.8.7'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,6 +18,7 @@ end
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'populator'
+gem 'nether', :path => '~/Documents/Aptana Studio 3 Workspace/nether'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -2,12 +2,9 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.paginate(:page => params[:page], :per_page => 8)
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @posts }
-    end
+    render_nether("posts/post")
   end
 
   # GET /posts/1
