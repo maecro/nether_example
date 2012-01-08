@@ -18,7 +18,7 @@ end
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'populator'
-gem 'nether', :path => '~/Documents/Aptana Studio 3 Workspace/nether'
+gem 'nether'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
