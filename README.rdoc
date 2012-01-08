@@ -11,7 +11,7 @@ After cloning the app install the bundle.
   
 Create the database and seed it with sample data.
 
-  rake db:create && rake db:seed
+  rake db:create && rake db:migrate && rake db:seed
 	
 == Usage
 Start up the sever, go to the the standard rails url and start scrolling.
